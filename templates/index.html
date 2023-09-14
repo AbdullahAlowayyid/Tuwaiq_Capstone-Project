@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+  <title>AILETICS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/test.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700,300i%7CRoboto:400,300i">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdi@5.8.55/css/materialdesignicons.min.css">
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+        src="static/images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <div class="page">
+    <!-- Page Header-->
+    <header class="section page-header" id="home">
+      <!-- RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+          data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+          data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
+            <span></span>
+          </div>
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+              <!-- RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!-- RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!-- RD Navbar Brand-->
+                <div class="rd-navbar-brand"><a class="brand" href="index.html"><img
+                      src="static/images/logo-default-199x38.png" alt="" width="199" height="38" /></a>
+                </div>
+              </div>
+              <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#services">start workout</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#gallery">Counters</a>
+                    </li>
+                    <!--                      <li class="rd-nav-item"><a class="rd-nav-link" href="#coaches">dashboard</a>-->
+                    <!--                      </li>-->
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#coaches">About us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--Main section-->
+    <section class="section main-section media-overlay" data-type="anchor"
+      style="background-image:url('static/images/background-1.jpg')">
+      <div class="container">
+        <div class="row justify-content-md-end justify-content-sm-start">
+          <div class="col-lg-3 col-sm-8 col-12 text-md-center">
+            <h1 class="big big-title wow fadeInRight"><span>AI</span><span>personal</span><span>trainer</span></h1>
+            <a class="wow fadeInRight button button-primary button-md" href="#" data-custom-scroll-to="join-now"
+              data-wow-delay=".2s">start workout</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Service-->
+    <section class="section section-lg" id="services" data-type="anchor">
+      <section class="section cta-section" id="join-now">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-5 col-md-8 col-12 wow fadeInLeft text-center">
+              <div class="cta-wrap">
+                <h2 class="creative-title">start<span> your<br></span><span>workout</span> now</h2>
+              </div>
+              <button id="startButton" class="button button-primary button-md button-large"
+                data-custom-scroll-to="counters-section" type="submit">start</button>
+            </div>
+
+            <div class="col-xl-7 col-md-4 col-12 d-flex justify-content-center align-items-center">
+              <!-- Centering the button -->
+              <div class="form-wrap">
+                <section class="section section-lg" id="services" data-type="anchor">
+                  <div class="container">
+                    <label class="form-label0" for="contact-name" style="font-size: 1.25em; color: white;">Number Of
+                      Reps:</label>
+                    <div class="row row-50 justify-content-start">
+                      <div class="col-md-6 col-lg-3 col-12 wow fadeIn" data-wow-delay=".1s">
+                        <figure class="service-box">
+                          <div class="square-figure"><span id="6reps" class=""
+                              style="font-size: 2em; cursor: pointer;">6</span></div>
+                        </figure>
+                      </div>
+                      <div class="col-md-6 col-lg-3 col-12 wow fadeIn" data-wow-delay=".2s">
+                        <figure class="service-box">
+                          <div class="square-figure"><span id="8reps" class=""
+                              style="font-size: 2em; cursor: pointer;">8</span></div>
+                        </figure>
+                      </div>
+                      <div class="col-md-6 col-lg-3 col-12 wow fadeIn" data-wow-delay=".3s">
+                        <figure class="service-box">
+                          <div class="square-figure"><span id="10reps" class=""
+                              style="font-size: 2em; cursor: pointer;">10</span></div>
+                        </figure>
+                      </div>
+                      <div class="col-md-6 col-lg-3 col-12 wow fadeIn" data-wow-delay=".4s">
+                        <figure class="service-box">
+                          <div class="square-figure"><span id="12reps" class=""
+                              style="font-size: 2em; cursor: pointer;">12</span></div>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- test -->
+                  <!-- <div class="container">
+                      <label class="form-label1" for="contact-name" style="font-size: 1.25em;">Cooldown Time:</label>
+                      <div class="row row-50 justify-content-start">
+
+                        <div class="col-md-6 col-lg-3 col-12 wow fadeIn" data-wow-delay=".1s">
+                          <figure class="service-box">
+                            <div class="square-figure"><span class="" style="font-size: 1.5em;">30s</span></div>
+                          </figure>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-12 wow fadeIn" data-wow-delay=".2s">
+                          <figure class="service-box">
+                            <div class="square-figure"><span class="" style="font-size: 1.5em;">1m</span></div>
+                          </figure>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-12 wow fadeIn" data-wow-delay=".3s">
+                          <figure class="service-box">
+                            <div class="square-figure"><span class="" style="font-size: 1.5em;">2m</span></div>
+                          </figure>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-12 wow fadeIn" data-wow-delay=".4s">
+                          <figure class="service-box">
+                            <div class="square-figure"><span class="" style="font-size: 1.5em;">5m</span></div>
+                          </figure>
+                        </div>
+                      </div>
+                    </div> -->
+                  <!-- test -->
+                  <form class="rd-form rd-mailform rd-form-centered" data-form-output="form-output-global"
+                    data-form-type="contact" method="post" action="bat/rd-mailform.php" style="padding-top: 40px;">
+                    <input type="checkbox" name="" id="" class="btn" />
+                    <div class="list">
+                      <a href="#" onClick="return false;"><i></i>30 Sec</a>
+                      <a href="#" onClick="return false;"><i></i>1 Min</a>
+                      <a href="#" onClick="return false;"><i></i>1.5 Min</a>
+                      <a href="#" onClick="return false;"><i></i>2 Min</a>
+                    </div>
+                  </form>
+                </section>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </section>
+    <!--Gallery section-->
+    <section class="section section-lg bg-gray-lighten" id="gallery" data-type="anchor"
+      style="background-color: #1c1541;">
+      <!--Counters-->
+      <section class="section counters-section" id="counters-section">
+        <div class="container">
+          <div class="row justify-content-center border-classic border-classic-big">
+            <div class="col-sm-6 col-md-3 wow fadeInLeft" data-wow-delay=".3s">
+              <div class="counter-creative">
+                <div class="counter-creative-number"><span class="counter">{{ curl_counter }}</span><span class=""> |
+                  </span><span class="counter">{{ err_curl_counter }}</span></div>
+                <h6 class="counter-creative-title">biceps curl</h6>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 wow fadeInUp">
+              <div class="counter-creative">
+                <div class="counter-creative-number"><span class="counter">{{ press_counter }}</span><span class=""> |
+                  </span><span class="counter">{{ err_press_counter }}</span></div>
+                <h6 class="counter-creative-title">shoulder press</h6>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 wow fadeInUp">
+              <div class="counter-creative">
+                <div class="counter-creative-number"><span class="counter">{{ squat_counter }}</span><span class=""> |
+                  </span><span class="counter">{{ err_squat_counter }}</span></div>
+                <h6 class="counter-creative-title">squat</h6>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 wow fadeInRight" data-wow-delay=".3s">
+              <div class="counter-creative">
+                <div class="counter-creative-number"><span class="counter">0</span></div>
+                <h6 class="counter-creative-title">calories burned</h6>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+              <img src="{{ url_for('video_feed') }}" width="100%">
+            </div>
+          </div>
+      </section>
+    </section>
+
+    <!--Slider Modern-->
+    <!--Slider Modern-->
+    <section class="section section-lg slider-modern" id="coaches" data-type="anchor">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2 class="text-uppercase" style="color: white;">More About us</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="owl-carousel owl-creative fadeInUp wow" data-xl-items="4" data-lg-items="2" data-sm-items="2"
+          data-items="1" data-dots="true" data-nav="true" data-stage-padding="0" data-loop="true" data-margin="50"
+          data-navigation-container="#owl-carousel-nav" data-dots-each="1" data-center="false" data-autoplay="false"
+          data-start-position="0">
+          <div class="slide-box">
+            <div class="slide-description">
+              <h4 style="color: white">Anwar Almutlaq</h4>
+              <ul class="social-links" style="padding-top: 20px; justify-content: center;">
+                <li><a class="icon mdi mdi-linkedin" href="https://www.linkedin.com/in/anwar-almutlaq/"
+                    target="_blank"></a></li>
+                <!-- <li style="cursor: pointer;" ><img src="static/images/github.png" alt="GitHub" style="width: 25px; height: 25px;" herf="#"></a></li> -->
+              </ul>
+            </div>
+            <div class="slide-links">
+              <ul class="social-links">
+                <li><a class="icon mdi mdi-linkedin" href="#"></a></li>
+                <li><a class="icon mdi mdi-github" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide-box">
+            <div class="slide-description">
+              <h4 style="color: white">Khalid Alhumaidan</h4>
+              <ul class="social-links" style="padding-top: 20px; justify-content: center;">
+                <li><a class="icon mdi mdi-linkedin" href="https://www.linkedin.com/in/khalid-alhumaidan-0a5267212/"
+                    target="_blank"></a></li>
+                <!-- <li style="cursor: pointer;"><img src="static/images/github.png" alt="GitHub" style="width: 25px; height: 25px;"></a></li> -->
+              </ul>
+            </div>
+            <div class="slide-links">
+              <ul class="social-links">
+                <li><a class="icon mdi mdi-linkedin" href="#"></a></li>
+                <li><a class="icon mdi mdi-github" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide-box">
+            <div class="slide-description">
+              <h4 style="color: white">Abdullah Alowyyid</h4>
+              <ul class="social-links" style="padding-top: 20px; justify-content: center;">
+                <li><a class="icon mdi mdi-linkedin" href="https://www.linkedin.com/in/abdullah-alowayid/"
+                    target="_blank"></a></li>
+                <!-- <li style="cursor: pointer;"><img src="static/images/github.png" alt="GitHub" style="width: 25px; height: 25px;"></a></li> -->
+              </ul>
+            </div>
+            <div class="slide-links">
+              <ul class="social-links">
+                <li><a class="icon mdi mdi-linkedin" href="#"></a></li>
+                <li><a class="icon mdi mdi-github" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide-box">
+            <div class="slide-description">
+              <h4 style="color: white">Rakan Almuwainie</h4>
+              <ul class="social-links" style="padding-top: 20px; justify-content: center;">
+                <li><a class="icon mdi mdi-linkedin" href="https://www.linkedin.com/in/rakan-almuwainie-90b342257/"
+                    target="_blank"></a></li>
+                <!-- <li style="cursor: pointer;"><img src="static/images/github.png" alt="GitHub" style="width: 25px; height: 25px;"></a></li> -->
+              </ul>
+            </div>
+            <div class="slide-links">
+              <ul class="social-links">
+                <li><a class="icon mdi mdi-linkedin" href="#"></a></li>
+                <li><a class="icon mdi mdi-github" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer class="section footer-classic context-light">
+      <div class="devider">
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row row-30 justify-content-xl-between justify-content-center flex-column-reverse flex-md-row">
+          <div class="col-12 col-md-7">
+            <div class="col-md-4 col-sm-6"><a class="brand" href="index.html"><img
+                  src="static/images/logo-default-199x38.png" alt="" width="199" height="38" /></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="static/js/core.min.js"></script>
+  <script src="static/js/script.js"></script>
+  <!-- coded by ragnar-->
+</body>
+
+</html>
