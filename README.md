@@ -58,9 +58,7 @@ None
 ##  Results
 
 
-
-https://github.com/Khalid-Ibrahim1/Capstone-Project/assets/74132986/52cb817b-cb00-428c-9972-a4f83d484e83
-
+https://github.com/AbdullahAlowayyid/Tuwaiq_Capstone-Project/assets/65086909/59a6698d-1f82-4aa2-ae4f-89240d19f47a
 
 
 As you can see in the video, the model was able to detect all of the exercises, the correct and incorrect. So we can say that its accuracy is 100% :)
